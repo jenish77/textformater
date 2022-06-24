@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Text Utils</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark" >
+
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Textutils.com</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" aria-current="page" href="#">Home</a>
+        <a class="nav-link" href="#">About Us</a>
+        <a class="nav-link" href="#">Contact Us</a>
+        <a class="nav-link disabled">Join Us</a>
+      </div>
+    </div><form class="d-flex" role="search">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+<div class="alert alert-success" role="alert">
+Welcome To Textutils</div>
+
+<div class="container">
+<form action="/analyze" method="get">
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+  <textarea name="text" class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+</div>
+  <div class="form-check form-switch">
+  <input class="form-check-input" name="removepunc" type="checkbox" role="switch" id="flexSwitchCheckChecked1" >
+  <label class="form-check-label" for="flexSwitchCheckChecked">Remove punctuation </label>
+</div> <div class="form-check form-switch">
+  <input class="form-check-input" name="fullcaps" type="checkbox" role="switch" id="flexSwitchCheckChecked2" >
+  <label class="form-check-label" for="flexSwitchCheckChecked">UPPERCASE </label>
+</div> <div class="form-check form-switch">
+  <input class="form-check-input" name="newlineremover" type="checkbox" role="switch" id="flexSwitchCheckChecked3" >
+  <label class="form-check-label" for="flexSwitchCheckChecked">New Line Remover </label>
+</div> <div class="form-check form-switch">
+  <input class="form-check-input" name="extraspaceremover" type="checkbox" role="switch" id="flexSwitchCheckChecked4" >
+  <label class="form-check-label" for="flexSwitchCheckChecked">Extra Space Remover </label>
+</div> <div class="form-check form-switch">
+  <input class="form-check-input" name="charcount" type="checkbox" role="switch" id="flexSwitchCheckChecked5" >
+  <label class="form-check-label" for="flexSwitchCheckChecked">Character Count </label>
+</div>
+<!--  <input type="checkbox" name="removepunc">Remove punctuation  <br>-->
+<!--        <input type="checkbox" name="fullcaps"> UPPERCASE  <br>-->
+<!--        <input type="checkbox" name="newlineremover"> New Line Remover  <br>-->
+<!--        <input type="checkbox" name="extraspaceremover"> Extra Space Remover  <br>-->
+<!--        <input type="checkbox" name="charcount"> Character Count  <br>-->
+<!--        <button type="submit">Analyze Text</button>-->
+  <button type="submit" class="btn btn-dark mt-2">Analyze Text</button>
+</form>
+</div>
+</body>
+</html>
